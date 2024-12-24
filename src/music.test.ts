@@ -1,4 +1,5 @@
 import { Music, MusicPlayer } from "./music";
+import {} from "uuid";
 
 describe("music player 클래스 테스트", () => {
   let musicPlayer: MusicPlayer;
@@ -195,4 +196,6 @@ describe("music player 클래스 테스트", () => {
     // assert
     expect(actual).toEqual(firstMusic);
   });
+
+  it("", () => {});
 });

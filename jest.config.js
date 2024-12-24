@@ -1,10 +1,13 @@
 /** @type {import('ts-jest').JestConfigWithTsJest} **/
 module.exports = {
+  collectCoverage: true,
+  coverageDirectory: "coverage",
+  collectCoverageFrom: ["src/**/*.ts"],
   verbose: true,
   preset: "ts-jest",
   testEnvironment: "node",
   transform: {
-    "^.+.tsx?$": ["ts-jest",{}],
+    "^.+.tsx?$": ["ts-jest", {}],
   },
-  testMatch: ["**/slice.test.ts"]
+  testMatch: ["**/htmlEscape.test.ts"],
 };
