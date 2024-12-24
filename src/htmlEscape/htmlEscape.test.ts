@@ -59,9 +59,9 @@ describe("unescape 함수를 테스트", () => {
 
   it("문자열만 테스트", () => {
     // arrange
-    const output = '';
+    const output = 'hello world 234';
     // act
-    const actual = unescape('');
+    const actual = unescape('hello world 234');
     // assert
     expect(actual).toBe(output);
   });
